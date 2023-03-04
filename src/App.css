@@ -100,7 +100,7 @@
   padding: 10px 15px 10px 15px;
   background-color: white;
   border-radius: 0 1rem 1rem 1rem;
-  width: max-content;
+  max-width: max-content;
 }
 
 .message-time{
