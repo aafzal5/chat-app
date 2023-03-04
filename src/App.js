@@ -11,20 +11,10 @@ function App() {
   const user_list = ["Alan", "Bob", "Carol", "Dean", "Elin"];
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
-  // const [time, setTime] = useState("");
 
   const handleInputChange = (message) => {
     setMessage(message);
   };
-
-  //function to show the time when the message is sent.
-  // const handleTime = () => {
-  //   const now = new Date();
-  //   const hours = now.getHours();
-  //   const minutes = now.getMinutes();
-  //   const formattedTime = hours + ":" + (minutes < 10 ? "0" : "") + minutes;
-  //   setTime(formattedTime);
-  // };
 
   const handleSendClick = () => {
     const randomUserIndex = Math.floor(Math.random() * user_list.length);
@@ -37,7 +27,6 @@ function App() {
     };
     setMessages([newMessage, ...messages]);
     setMessage("");
-    // handleTime();
   };
 
   const handleLikeClick = (index) => {
